@@ -10,6 +10,7 @@
     <h1>Exercices PHP Partie 4</h1>
     <h2>Exercice 4</h2>
 
+<h3>Version 1</h3>
 <?php
 $languages = [
     1=>'JS',
@@ -20,8 +21,35 @@ $languages = [
 ];
 $languages += [6 => 'PHP'];
 
-echo 'jaffiche la valeur de la clé ajouté qui est 6 : '.$languages[6];
+echo $languages[6];
 ?>
 
+<h3>Version 2</h3>
+<?php
+$languages = [
+    1=>'JS',
+    2=>'Java',
+    3=>'Pyton',
+    4=>'C#',
+    5=>'C++',
+];
+$languages[6] = 'PHP';
+var_dump($languages);
+echo $languages[6];
+?>
+
+<h3>Version 3</h3>
+<?php
+$languages = [
+    1=>'JS',
+    2=>'Java',
+    3=>'Pyton',
+    4=>'C#',
+    5=>'C++',
+];
+array_push($languages, 'PHP', 'Ruby'); // ajouter a la fin de tableau
+var_dump($languages);
+echo $languages[6];
+?>
 </body>
 </html>

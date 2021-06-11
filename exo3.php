@@ -11,7 +11,15 @@
     <h2>Exercice 3</h2>
 
 <?php
-
+$languages = [
+    1=>'JS',
+    2=>'Java',
+    3=>'Pyton',
+    4=>'C#',
+    5=>'C++',
+];
+// var_dump($languages);
+echo $languages[3];
 ?>
 
 </body>

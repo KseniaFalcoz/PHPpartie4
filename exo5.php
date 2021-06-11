@@ -10,19 +10,35 @@
     <h1>Exercices PHP Partie 4</h1>
     <h2>Exercice 5</h2>
 
+    <h3>Version 1</h3>
 <?php
-$départements = array(
-    75=>'Paris',
-    74=>'Annecy',
-    17=>'Île d\'Oléron',
-    33=>'Bordeaux',
-    64=>'Biarritz',
+$departements = array(
+    75 => 'Paris',
+    74 => 'Annecy',
+    17 => 'Île d\'Oléron',
+    33 => 'Bordeaux',
+    64 => 'Biarritz',
 );
-
-    foreach($départements as $clefs=>$val){//cete boucle a récupéré la clé et la valeur 
-        echo $clefs.' : '.$val.' . <br/>';
+    foreach($departements as $key  =>  $valeur){
+        echo $key.' : '.$valeur.'. <br/>';
     }
 ?>
 
+<h3>Version 2</h3>
+<?php
+$departements = [
+    75 => 'Paris',
+    74 => 'Annecy',
+    17 => 'Île d\'Oléron',
+    33 => 'Bordeaux',
+    64 => 'Biarritz',
+];
+var_dump($departements);
+    foreach($departements as $key  =>  $valeur) {
+        ?>
+        <p>Le départemet <?= $departements ?> a le numéro <?= $key ?></p>
+        <?php
+    }
+?>
 </body>
 </html>
